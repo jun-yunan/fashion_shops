@@ -1,30 +1,30 @@
 class UserModel {
-  final String id;
-  final String name;
-  final String email;
-  final String avatarUrl;
-  final String bio;
-  final String gender;
-  final String addresss;
-  final String numberPhone;
-  final String provider;
-  final String birthday; // Ngày tháng năm sinh
-  final String createdAt; // Thời điểm tạo
-  final String updatedAt; // Thời điểm cập nhật
+  String? id;
+  String? name;
+  String? email;
+  String? avatarUrl;
+  String? bio;
+  String? gender;
+  String? address;
+  String? numberPhone;
+  String? provider;
+  String? birthday; // Ngày tháng năm sinh
+  String? createdAt; // Thời điểm tạo
+  String? updatedAt; // Thời điểm cập nhật
 
   UserModel({
-    required this.id,
-    required this.name,
-    required this.email,
-    required this.avatarUrl,
-    required this.bio,
-    required this.birthday,
-    required this.gender,
-    required this.addresss,
-    required this.numberPhone,
-    required this.provider,
-    required this.createdAt,
-    required this.updatedAt,
+    this.id,
+    this.name,
+    this.email,
+    this.avatarUrl,
+    this.bio,
+    this.birthday,
+    this.gender,
+    this.address,
+    this.numberPhone,
+    this.provider,
+    this.createdAt,
+    this.updatedAt,
   });
 
   factory UserModel.fromJson(Map<String, dynamic> json) {
@@ -35,7 +35,7 @@ class UserModel {
       avatarUrl: json['avatarUrl'],
       bio: json['bio'],
       gender: json['gender'],
-      addresss: json['address'],
+      address: json['address'],
       numberPhone: json['numberPhone'],
       provider: json['provider'],
       birthday: json['birthday'],
@@ -52,7 +52,7 @@ class UserModel {
       'avatarUrl': avatarUrl,
       'bio': bio,
       'gender': gender,
-      'addresss': addresss,
+      'address': address,
       'numberPhone': numberPhone,
       'provider': provider,
       'birthday': birthday,

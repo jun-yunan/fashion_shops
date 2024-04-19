@@ -9,6 +9,7 @@ import 'package:fashion_shops/screens/cart/cart-screen.dart';
 import 'package:fashion_shops/screens/home/home-screen.dart';
 import 'package:fashion_shops/screens/product/product-details/details-screen.dart';
 import 'package:fashion_shops/screens/product/product-screen.dart';
+import 'package:fashion_shops/screens/profile/personal-information/personal-information-screen.dart';
 import 'package:fashion_shops/screens/profile/profile-screen.dart';
 import 'package:fashion_shops/screens/search/search-screen.dart';
 import 'package:fashion_shops/screens/splash/splash-screen.dart';
@@ -48,6 +49,9 @@ class MyApp extends StatelessWidget {
             name: '/product/details', page: () => const ProductDetailScreen()),
         GetPage(name: '/search', page: () => const SearchScreen()),
         GetPage(name: '/profile', page: () => const ProfileScreen()),
+        GetPage(
+            name: '/profile/personal-information',
+            page: () => const PersonalInformationScreen()),
         GetPage(name: '/admin', page: () => const AdminScreen()),
         GetPage(
             name: '/admin/add-product', page: () => const AddProductScreen()),
